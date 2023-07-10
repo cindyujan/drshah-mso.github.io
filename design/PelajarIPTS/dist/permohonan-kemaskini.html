@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<title>IPTS | Permohonan Baru</title>
+<title>Mooli | Form Wizard</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -13,13 +13,8 @@
 <!-- VENDOR CSS -->
 <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/vendor/animate-css/vivify.min.css">
+<link rel="stylesheet" href="assets/vendor/jquery-steps/jquery.steps.css">
 
-<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
-<link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css">
-<link rel="stylesheet" href="assets/vendor/parsleyjs/css/parsley.css">
-
-<link rel="stylesheet" href="assets/vendor/dropify/css/dropify.min.css">
 <!-- MAIN CSS -->
 <link rel="stylesheet" href="assets/css/mooli.min.css">
 
@@ -32,7 +27,7 @@
     <div class="page-loader-wrapper">
         <div class="loader">
             <div class="m-t-30"><img src="assets/images/icon.svg" width="40" height="40" alt="Mooli"></div>
-            <p>Sedang semak...</p>        
+            <p>Please wait...</p>        
         </div>
     </div>
 
@@ -100,30 +95,39 @@
                         <a href="index.html"><img src="assets/images/icon.svg" alt="Mooli Logo" class="img-fluid logo"></a>
                         <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-align-left"></i></button>
                     </div>
-                    <!--<form id="navbar-search" class="navbar-form search-form">
+                    <form id="navbar-search" class="navbar-form search-form">
                         <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
-                        <input value="" class="form-control" placeholder="Search here..." type="text">                    
-                    </form>-->
+                        <!--<input value="" class="form-control" placeholder="Search here..." type="text">--> 
+                        <input value="" class="form-control" placeholder="Carian..." type="text">                    
+                    </form>
                 </div>
                 <div class="navbar-right">
                     <div id="navbar-menu">
                         <ul class="nav navbar-nav">
-                            <li class="dropdown hidden-xs">
-                            </li>
+                            <!--<li><a href="javascript:void(0);" class="right_note icon-menu" title="Right Menu">Notes</a></li>-->
+                            <!--<li class="dropdown hidden-xs">
+                                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">Create</a>
+                                <div class="dropdown-menu pb-0 mt-0">
+                                    <a class="dropdown-item pt-2 pb-2" href="javascript:void(0);">User</a>
+                                    <a class="dropdown-item pt-2 pb-2" href="javascript:void(0);">Product</a>
+                                    <a class="dropdown-item pt-2 pb-2" href="javascript:void(0);">Category</a>
+                                    <a class="dropdown-item pt-2 pb-2" href="javascript:void(0);">Report</a>
+                                </div>
+                            </li> -->
                             <li class="dropdown hidden-xs">
                                 <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
                                     <i class="fa fa-envelope-o"></i>
                                     <span class="notification-dot msg">4</span>
                                 </a>
                                 <ul class="dropdown-menu right_chat email mt-0 animation-li-delay">
-                                    <li class="header theme-bg gradient mt-0 text-light">You have 4 New eMail</li>
+                                    <li class="header theme-bg gradient mt-0 text-light">Anda ada 4 E-Mel Baru</li>
                                     <li>
                                         <a href="javascript:void(0);">
                                             <div class="media">
                                                 <img class="media-object " src="assets/images/xs/avatar4.jpg" alt="">
                                                 <div class="media-body">
-                                                    <span class="name">James Wert <small class="float-right font-12">Just now</small></span>
-                                                    <span class="message">Update GitHub</span>
+                                                    <span class="name">Sekretariat BKOKU KPT <small class="float-right font-12">Tadi</small></span>
+                                                    <span class="message">Mesej Baru</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -133,8 +137,8 @@
                                             <div class="media">
                                                 <img class="media-object" src="assets/images/xs/avatar1.jpg" alt="">
                                                 <div class="media-body">
-                                                    <span class="name">Folisise Chosielie <small class="float-right font-12">12min ago</small></span>
-                                                    <span class="message">New Messages</span>
+                                                    <span class="name">Sekretariat BKOKU KPT <small class="float-right font-12">12min yang lalu</small></span>
+                                                    <span class="message">Mesej Baru</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -144,8 +148,8 @@
                                             <div class="media">
                                                 <img class="media-object" src="assets/images/xs/avatar5.jpg" alt="">
                                                 <div class="media-body">
-                                                    <span class="name">Louis Henry <small class="float-right font-12">38min ago</small></span>
-                                                    <span class="message">Design bug fix</span>
+                                                    <span class="name">Sekretariat BKOKU KPT <small class="float-right font-12">38min yang lalu</small></span>
+                                                    <span class="message">Mesej Baru</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -155,8 +159,8 @@
                                             <div class="media mb-0">
                                                 <img class="media-object" src="assets/images/xs/avatar2.jpg" alt="">
                                                 <div class="media-body">
-                                                    <span class="name">Debra Stewart <small class="float-right font-12">2hr ago</small></span>
-                                                    <span class="message">Fix Bug</span>
+                                                    <span class="name">Sekretariat BKOKU KPT <small class="float-right font-12">2hr yang lalu</small></span>
+                                                    <span class="message">Mesej Baru</span>
                                                 </div>
                                             </div>
                                         </a>
@@ -169,13 +173,13 @@
                                     <span class="notification-dot info">4</span>
                                 </a>
                                 <ul class="dropdown-menu feeds_widget mt-0 animation-li-delay">
-                                    <li class="header theme-bg gradient mt-0 text-light">You have 4 New Notifications</li>
+                                    <li class="header theme-bg gradient mt-0 text-light">Anda ada 4 Notifikasi Baru</li>
                                     <li>
                                         <a href="#">
                                             <div class="mr-4"><i class="fa fa-check text-red"></i></div>
                                             <div class="feeds-body">
-                                                <h4 class="title text-danger">Issue Fixed <small class="float-right text-muted font-12">9:10 AM</small></h4>
-                                                <small>WE have fix all Design bug with Responsive</small>
+                                                <h4 class="title text-danger">Tuntutan Tidak Lulus <small class="float-right text-muted font-12">9:10 AM</small></h4>
+                                                <small>Harap Maaf. Tuntutan anda tidak lulus.</small>
                                             </div>
                                         </a>
                                     </li>                               
@@ -183,8 +187,8 @@
                                         <a href="#">
                                             <div class="mr-4"><i class="fa fa-user text-info"></i></div>
                                             <div class="feeds-body">
-                                                <h4 class="title text-info">New User <small class="float-right text-muted font-12">9:15 AM</small></h4>
-                                                <small>I feel great! Thanks team</small>
+                                                <h4 class="title text-info">Permohonan Anda Diterima. <small class="float-right text-muted font-12">9:15 AM</small></h4>
+                                                <small>Kami telah menerima permohonan anda. </small>
                                             </div>
                                         </a>
                                     </li>
@@ -192,8 +196,8 @@
                                         <a href="#">
                                             <div class="mr-4"><i class="fa fa-question-circle text-warning"></i></div>
                                             <div class="feeds-body">
-                                                <h4 class="title text-warning">Server Warning <small class="float-right text-muted font-12">9:17 AM</small></h4>
-                                                <small>Your connection is not private</small>
+                                                <h4 class="title text-warning">Tuntutan Tidak Lengkap <small class="float-right text-muted font-12">9:17 AM</small></h4>
+                                                <small>Tuntutan anda tidak lengkap. Sila kemaskini. </small>
                                             </div>
                                         </a>
                                     </li>
@@ -201,8 +205,8 @@
                                         <a href="#">
                                             <div class="mr-4"><i class="fa fa-thumbs-o-up text-success"></i></div>
                                             <div class="feeds-body">
-                                                <h4 class="title text-success">2 New Feedback <small class="float-right text-muted font-12">9:22 AM</small></h4>
-                                                <small>It will give a smart finishing to your site</small>
+                                                <h4 class="title text-success">Permohonan Anda Lulus <small class="float-right text-muted font-12">9:22 AM</small></h4>
+                                                <small>Tahniah! Permohonan anda untuk Sesi/Semester ini telah diluluskan.</small>
                                             </div>
                                         </a>
                                     </li>
@@ -219,7 +223,7 @@
                                     <a class="dropdown-item pt-2 pb-2" href="javascript:void(0);"><img src="assets/images/flag/france.svg" alt="French" > French</a>
                                 </div>
                             </li>
-                            <li><a href="javascript:void(0);" class="right_toggle icon-menu" title="Right Menu"><i class="fa fa-comments-o"></i></a></li>
+                            <!--<li><a href="javascript:void(0);" class="right_toggle icon-menu" title="Right Menu"><i class="fa fa-comments-o"></i></a></li>-->
                             <li class="hidden-xs"><a href="javascript:void(0);" id="btnFullscreen" class="icon-menu"><i class="fa fa-arrows-alt"></i></a></li>
                             <li><a href="page-login.html" class="icon-menu"><i class="fa fa-power-off"></i></a></li>
                         </ul>
@@ -286,25 +290,143 @@
                         <img src="assets/images/user.png" class="user-photo" alt="User Profile Picture">
                     </div>
                     <div class="dropdown">
-                      
-                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Ali Bin Abu</strong></a>
+                        <span>Selamat Datang,</span>
+                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Pelajar IPTS</strong></a>
                         <ul class="dropdown-menu dropdown-menu-right account vivify flipInY">
-                            <li><a href="page-profile.html"><i class="fa fa-user"></i>Profil Diri</a></li>
-                            <li><a href="app-inbox.html"><i class="fa fa-envelope"></i>Notifikasi</a></li>
+                            <li><a href="page-profile.html"><i class="fa fa-user"></i>Profil</a></li>
+                            <li><a href="app-inbox.html"><i class="fa fa-envelope"></i>Mesej</a></li>
                             <li><a href="setting.html"><i class="fa fa-gear"></i>Tetapan</a></li>
                             <li class="divider"></li>
-                            <li><a href="page-login.html"><i class="fa fa-power-off"></i>Logout</a></li>
+                            <li><a href="page-login.html"><i class="fa fa-power-off"></i>Log Keluar</a></li>
                         </ul>
                     </div>
                 </div>  
                 <nav id="left-sidebar-nav" class="sidebar-nav">
                     <ul id="main-menu" class="metismenu animation-li-delay">
-                        <li ><a href="index.html"><i class="fa fa-dashboard"></i> <span>Halaman Utama</span></a></li>
-                        <li><a href="permohonan.html"><i class="fa fa-tasks"></i> <span>Permohonan</span></a></li>
-                        <li><a href="tuntutan.html"><i class="fa fa-money"></i> <span>Tuntutan</span></a></li>                         
+                        <li class="header">Utama</li>
+                        <li><a href="index.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                        <!--<li class="header">Permohonan</li>
+                        <li><a href="app-inbox.html"><i class="fa fa-envelope"></i> <span>Email</span> <span class="badge badge-default mr-0">12</span></a></li>
+                        <li><a href="app-chat.html"><i class="fa fa-comments"></i> <span>Chat</span></a></li>
+                        <li><a href="app-calendar.html"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
+                        <li><a href="app-todo.html"><i class="fa fa-th-list"></i> <span>Todo List</span></a></li>
+                        
+                        <li><a href="app-filemanager.html"><i class="fa fa-folder"></i> <span>File Manager</span></a></li>
+                        <li><a href="app-contacts.html"><i class="fa fa-address-book"></i> <span>Contacts</span></a></li>
+                        <li><a href="app-scrumboard.html"><i class="fa fa-tasks"></i> <span>Scrumboard</span></a></li>
+                        <li><a href="page-news.html"><i class="fa fa-globe"></i> <span>Blog</span></a></li>
+                        <li><a href="page-social.html"><i class="fa fa-share-alt-square"></i> <span>Social</span></a></li>-->
+                        
+                        <li class="header">Menu</li>
+                        <!--<li>
+                            <a href="#uiElements" class="has-arrow"><i class="fa fa-diamond"></i><span>ui Elements</span></a>
+                            <ul>
+                                <li><a href="ui-helper-class.html">Helper Classes</a></li>
+                                <li><a href="ui-bootstrap.html">Bootstrap UI</a></li>
+                                <li><a href="ui-typography.html">Typography</a></li>
+                                <li><a href="ui-tabs.html">Tabs</a></li>
+                                <li><a href="ui-buttons.html">Buttons</a></li>                            
+                                <li><a href="ui-icons.html">Icons</a></li>
+                                <li><a href="ui-notifications.html">Notifications</a></li>
+                                <li><a href="ui-colors.html">Colors</a></li>
+                                <li><a href="ui-dialogs.html">Dialogs</a></li>                                    
+                                <li><a href="ui-list-group.html">List Group</a></li>
+                                <li><a href="ui-media-object.html">Media Object</a></li>
+                                <li><a href="ui-modals.html">Modals</a></li>
+                                <li><a href="ui-nestable.html">Nestable</a></li>
+                                <li><a href="ui-progressbars.html">Progress Bars</a></li>
+                                <li><a href="ui-range-sliders.html">Range Sliders</a></li>
+                            </ul>
+                        </li>-->
+                        <li class="active">
+                            <a href="#forms" class="has-arrow"><i class="fa fa-pencil"></i><span>Permohonan</span></a>
+                            <ul>
+                                <!--<li><a href="forms-basic.html">Basic Elements</a></li>
+                                <li><a href="forms-advanced.html">Advanced Elements</a></li>
+                                <li><a href="forms-validation.html">Form Validation</a></li>
+                                <li class="active"><a href="forms-wizard.html">Form Wizard</a></li>
+                                <li><a href="forms-dragdropupload.html">Drag &amp; Drop Upload</a></li>
+                                <li><a href="forms-cropping.html">Image Cropping</a></li>
+                                <li><a href="forms-summernote.html">Summernote</a></li>
+                                <li><a href="forms-editors.html">CKEditor</a></li>
+                                <li><a href="forms-markdown.html">Markdown</a></li>-->
+                                <li><a href="permohonan-baru.html">Baru</a></li>
+                                <li><a href="permohonan-kemaskini.html">Kemaskini</a></li>
+                                <li><a href="permohonan-sejarah.html">Sejarah</a></li>
+                                <li><a href="permohonan-status.html">Status</a></li>
+                            </ul>
                         </li>
-                       
-                       
+                        <li class="active">
+                            <a href="#forms" class="has-arrow"><i class="fa fa-pencil"></i><span>Tuntutan</span></a>
+                            <ul>
+                                <!--<li><a href="forms-basic.html">Basic Elements</a></li>
+                                <li><a href="forms-advanced.html">Advanced Elements</a></li>
+                                <li><a href="forms-validation.html">Form Validation</a></li>
+                                <li class="active"><a href="forms-wizard.html">Form Wizard</a></li>
+                                <li><a href="forms-dragdropupload.html">Drag &amp; Drop Upload</a></li>
+                                <li><a href="forms-cropping.html">Image Cropping</a></li>-->
+                                <li><a href="tuntutan-baru.html">Baru</a></li>
+                                <li><a href="tuntutan-kemaskini.html">Kemaskini</a></li>
+                                <li><a href="tuntutan-sejarah.html">Sejarah</a></li>
+                                <li><a href="tuntutan-status.html">Status</a></li>
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a href="#Tables" class="has-arrow"><i class="fa fa-table"></i><span>Tables</span></a>
+                            <ul>
+                                <li><a href="table-normal.html">Normal Tables</a></li>
+                                <li><a href="table-jquery-datatable.html">Jquery Datatables</a></li>
+                                <li><a href="table-editable.html">Editable Tables</a></li>
+                                <li><a href="table-color.html">Tables Color</a></li>
+                                <li><a href="table-filter.html">Table Filter</a></li>
+                                <li><a href="table-dragger.html">Table dragger</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#charts" class="has-arrow"><i class="fa fa-pie-chart"></i><span>Charts</span></a>
+                            <ul>
+                                <li><a href="chart-apex.html">Apex Charts</a></li>
+                                <li><a href="chart-c3.html">C3 Charts</a></li>
+                                <li><a href="chart-morris.html">Morris Chart</a></li>
+                                <li><a href="chart-flot.html">Flot Chart</a></li>
+                                <li><a href="chart-chartjs.html">ChartJS</a></li>
+                                <li><a href="chart-jquery-knob.html">Jquery Knob</a></li>                            
+                                <li><a href="chart-sparkline.html">Sparkline Chart</a></li>
+                            </ul>
+                        </li>
+                        <li class="header">More Pages</li>
+                        <li><a href="widgets.html"><i class="fa fa-puzzle-piece"></i><span>Widgets</span></a></li>
+                        <li>
+                            <a href="#Pages" class="has-arrow"><i class="fa fa-folder"></i><span>Pages</span></a>
+                            <ul>
+                                <li><a href="page-login.html">Login</a></li>
+                                <li><a href="page-register.html">Register</a></li>
+                                <li><a href="page-forgot-password.html">Forgot Password</a></li>
+                                <li><a href="page-404.html">Page 404</a></li>
+                                <li><a href="page-blank.html">Blank Page</a></li>
+                                <li><a href="page-search-results.html">Search Results</a></li>
+                                <li><a href="page-profile.html">Profile </a></li>
+                                <li><a href="page-invoices.html">Invoices </a></li>
+                                <li><a href="page-gallery.html">Image Gallery </a></li>
+                                <li><a href="page-timeline.html">Timeline</a></li>
+                                <li><a href="page-pricing.html">Pricing</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="map-jvectormap.html"><i class="fa fa-map"></i> <span>jVector Maps</span></a></li>-->
+                        <!--<li class="extra_widget">
+                            <div class="form-group">
+                                <label class="d-block">Traffic this Month <span class="float-right">77%</span></label>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block">Server Load <span class="float-right">50%</span></label>
+                                <div class="progress progress-xxs">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </li>-->
                     </ul>
                 </nav>     
             </div>
@@ -505,7 +627,7 @@
                                             <img class="media-object " src="assets/images/xs/avatar5.jpg" alt="">
                                             <div class="media-body">
                                                 <span class="name">Debra Stewart <small class="text-muted"><i class="fa fa-star"></i></small></span>
-                                                <span class="message">It’s no33t that bad...</span>
+                                                <span class="message">It’s not that bad...</span>
                                                 <span class="badge badge-outline status"></span>
                                             </div>
                                         </a>                            
@@ -624,269 +746,289 @@
                 <div class="block-header">
                     <div class="row clearfix">
                         <div class="col-lg-4 col-md-12 col-sm-12">
-                            <h1>Permohonan Baru</h1>
-                        </div>            
+                            <h1>Hi, Pelajar IPTS!</h1>
+                            <!--<span>JustDo Form Wizard,</span>-->
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12 text-lg-right">
+                            
+                        </div>
                     </div>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-md-12">
-                        <div class="card social theme-bg gradient">
-                            <div class="profile-header d-sm-flex justify-content-between justify-content-center">
-                                <div class="d-flex">
-                                    <!--<div class="mr-3">
-                                        <img src="assets/images/user.png" class="rounded" alt="">
-                                    </div>-->
-                                    <div class="details">
-                                       
-                                    </div>                                
-                                </div>
-                              
-                            </div>
-                        </div>                    
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-5">
+                    <!--<div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="card">
                             <div class="header">
-                                <h2>Semakan Kelayakan MQA</h2>
-                                <br>
-                                 <div class="mr-4">
-                                        <img src="assets/images/mqalogo.png" alt=""height="120" width="350">
-                                    </div>
+                                <h2>Horizontal Layout with icon</h2>
                                 <ul class="header-dropdown dropdown">
                                     
                                     <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="body">
-                                <hr>
-                                <small class="text-muted">Panduan Semak Pencarian </small>
-                                <p>Carian boleh dilakukan melalui kata kunci/kombinasi kata kunci di bawah:</p>   
-                                <p>(1) Pilih Universiti</p>  
-                                <p>(2) Pilih Peringkat</p>   
-                                <p>(3) Pilih Kursus</p>                           
-                                <hr>
-                                <hr>
-                                <form id="basic-form" method="post" novalidate>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Nama Institusi</label>
-                                            <select class="form-control">
-                                                <option value="">Pilih</option>
-                                                <option value="UMS">Universiti Malaysia Sabah</option>
-                                                <option value="UKM">Universiti Kebangsaan Malaysia</option>
-                                                <option value="UM">Universiti Malaya</option>
-                                                <option value="UPM">Universiti Putra Malaysia</option>
-                                                <option value="UTeM">Universiti Teknikal Malaysia Melaka</option>
-                                                <option value="USM">Universiti Sains Malaysia</option>
-                                                <option value="UPNM">Universiti Pertahanan Nasional Malaysia</option>
-                                                <option value="UTHM">Universiti Tun Hussein Onn Malaysia</option>
-                                                <option value="UMK">Universiti Malaysia Kelantan</option>
-                                                <option value="UUM">Univeristi Utara Malaysia</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Pilih Peringkat</label>
-                                            <select class="form-control">
-                                                <option value="">Pilih</option>
-                                                <option value="SS">Sijil Kemahiran</option>
-                                                <option value="XX">Diploma</option>
-                                                <option value="SS">Sarjana Muda</option>
-                                                <option value="FF">Diploma Pendidikan</option>
-                                                <option value="QQQ">Sarjana</option>
-                                                <option value="AAA">Ijazah Kedoktoran</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Nama Kursus</label>
-                                            <select class="form-control">
-                                                <option value="">Pilih</option>
-                                                <option value="SS">Sarjana Muda Kejuruteraan (Elektrik-Mekatronik)</option>
-                                                <option value="XX">Sarjana Muda Kejuruteraan (Elektrik-Telekomunikasi)</option>
-                                                <option value="SS">Sarjana Muda Kejuruteraan (Kimia)</option>
-                                                <option value="FF">	Sarjana Muda Kejuruteraan (Elektrik-Mekatronik)</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <br>
-                                    <button type="submit" class="btn btn-primary theme-bg gradient">Semak</button>
-                                </form>
-                                <hr>
-                            </div>
-                        </div>                    
-                    </div>
-                    <div class="col-xl-8 col-lg-8 col-md-7">
-                        <div class="card">
-                            <div class="header">
-                                <h2>Maklumat Akademik</h2>
-                                <ul class="header-dropdown dropdown">                                
-                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
                                     <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu theme-bg gradient">
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="body">
-                                <div class="row clearfix">
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>No Kad Matrik</label>
-                                            <input type="text" class="form-control" placeholder="A23CS0009">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Nama Institusi</label>
-                                            <select class="form-control">
-                                                <option value="">Pilih</option>
-                                                <option value="UMS">Universiti Malaysia Sabah</option>
-                                                <option value="UKM">Universiti Kebangsaan Malaysia</option>
-                                                <option value="UM">Universiti Malaya</option>
-                                                <option value="UPM">Universiti Putra Malaysia</option>
-                                                <option value="UTeM">Universiti Teknikal Malaysia Melaka</option>
-                                                <option value="USM">Universiti Sains Malaysia</option>
-                                                <option value="UPNM">Universiti Pertahanan Nasional Malaysia</option>
-                                                <option value="UTHM">Universiti Tun Hussein Onn Malaysia</option>
-                                                <option value="UMK">Universiti Malaysia Kelantan</option>
-                                                <option value="UUM">Univeristi Utara Malaysia</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Pilih Peringkat</label>
-                                            <select class="form-control">
-                                                <option value="">Pilih</option>
-                                                <option value="SS">Sijil Kemahiran</option>
-                                                <option value="XX">Diploma</option>
-                                                <option value="SS">Sarjana Muda</option>
-                                                <option value="FF">Diploma Pendidikan</option>
-                                                <option value="QQQ">Sarjana</option>
-                                                <option value="AAA">Ijazah Kedoktoran</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Nama Kursus</label>
-                                            <select class="form-control">
-                                                <option value="">Pilih</option>
-                                                <option value="SS">Sarjana Muda Kejuruteraan (Elektrik-Mekatronik)</option>
-                                                <option value="XX">Sarjana Muda Kejuruteraan (Elektrik-Telekomunikasi)</option>
-                                                <option value="SS">Sarjana Muda Kejuruteraan (Kimia)</option>
-                                                <option value="FF">	Sarjana Muda Kejuruteraan (Elektrik-Mekatronik)</option>
-                                            </select>
-                                        </div>
-                                    </div>       
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Tarikh Mula Pengajian</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="icon-calendar"></i></span>
-                                                </div>
-                                                <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Tarikh Tamat Pengajian</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="icon-calendar"></i></span>
-                                                </div>
-                                                <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Mod Pengajian</label>
-                                            <select class="form-control">
-                                                <option value="">Pilih</option>
-                                                <option value="SS">Separuh Masa</option>
-                                                <option value="XX">Sepenuh Masa</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Tempoh Pengajian</label>
-                                            <select class="form-control">
-                                                <option value="">Pilih</option>
-                                                <option value="SS">3</option>
-                                                <option value="XX">4</option>
-                                                <option value="XX">5</option>
-                                                <option value="XX">6</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-12">
-                                        <div class="form-group c_form_group">
-                                            <label>Bil Bulan Persemester</label>
-                                            <select class="form-control">
-                                                <option value="">Pilih</option>
-                                                <option value="SS">5</option>
-                                                <option value="XX">6</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="inputGroupFile04">
-                                            <label class="custom-file-label" for="inputGroupFile04">Salinan Surat Tawaran Pengajian</label>
-                                        </div>      
-                                    </div>
-                                </div><br>
-                                <label class="control-inline fancy-checkbox">
-                                    <input type="checkbox" name="checkbox2">
-                                    <span>Saya mengaku bahawa segala maklumat yang diberikan adalah betul dan benar belaka</span>
-                                </label>
-                                <br>
-                                <br>
-                                <a href="sejarah-permohonan.html" class="btn btn-primary theme-bg gradient">Hantar Permohonan</a>
-                                <button type="button" class="btn btn-default">Simpan</button>
-                                <button type="button" class="btn btn-default">Batal</button>
+                                <div id="wizard_horizontal_icon" class="step_icon">
+                                    <h2><i class="fa fa-home"></i></h2>
+                                    <section>
+                                        <p>In euismod augue ullamcorper leo dignissim quis elementum
+                                            arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
+                                            velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
+                                            iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                                    </section>
+                                    <h2><i class="fa fa-gear"></i></h2>
+                                    <section>
+                                        <p>In euismod augue ullamcorper leo dignissim quis elementum
+                                            arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
+                                            velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
+                                            iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                                    </section>
+                                    <h2><i class="fa fa-hand-o-right"></i></h2>
+                                    <section>
+                                        <p>In euismod augue ullamcorper leo dignissim quis elementum
+                                            arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
+                                            velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
+                                            iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                                    </section>
+                                </div>
                             </div>
                         </div>
-                      
-                    </div>                
+                    </div>-->
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Horizontal Layout with step</h2>
+                                <ul class="header-dropdown dropdown">
+                                    
+                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu theme-bg gradient">
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div id="wizard_horizontal">
+                                    <h2>First Step</h2>
+                                    <section>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas
+                                            arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea
+                                            dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus
+                                            dolor, tristique ac tempus nec, iaculis quis nisi. </p>
+                                    </section>
+                                    <h2>Second Step</h2>
+                                    <section>
+                                        <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac
+                                            ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi
+                                            tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum,
+                                            nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien
+                                            a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum
+                                            arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
+                                            velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
+                                            iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus. </p>
+                                    </section>
+                                    <h2>Third Step</h2>
+                                    <section>
+                                        <p> Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo
+                                            condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam.
+                                            Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat.
+                                            Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui
+                                            commodo lectus sollicitudin in auctor mauris venenatis. </p>
+                                    </section>
+                                    <h2>Forth Step</h2>
+                                    <section>
+                                        <p> Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula
+                                            vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec
+                                            ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae.
+                                            Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo
+                                            tortor. </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!--<div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Basic Example - Vertical Layout</h2>
+                                <ul class="header-dropdown dropdown">
+                                    
+                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu theme-bg gradient">
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div id="wizard_vertical">
+                                    <h2>First Step</h2>
+                                    <section>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas
+                                            arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea
+                                            dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus
+                                            dolor, tristique ac tempus nec, iaculis quis nisi. </p>
+                                    </section>
+                                    <h2>Second Step</h2>
+                                    <section>
+                                        <p> Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac
+                                            ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi
+                                            tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum,
+                                            nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien
+                                            a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum
+                                            arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
+                                            velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
+                                            iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus. </p>
+                                    </section>
+                                    <h2>Third Step</h2>
+                                    <section>
+                                        <p> Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo
+                                            condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam.
+                                            Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat.
+                                            Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui
+                                            commodo lectus sollicitudin in auctor mauris venenatis. </p>
+                                    </section>
+                                    <h2>Forth Step</h2>
+                                    <section>
+                                        <p> Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula
+                                            vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec
+                                            ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae.
+                                            Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo
+                                            tortor. </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <!--<div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Advanced Form Example With Validation</h2>
+                                <ul class="header-dropdown dropdown">
+                                    
+                                    <li><a href="javascript:void(0);" class="full-screen"><i class="fa fa-expand"></i></a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu theme-bg gradient">
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-eye"></i> View Details</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-share-alt"></i> Share</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-copy"></i> Copy to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-folder"></i> Move to</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-edit"></i> Rename</a></li>
+                                            <li><a href="javascript:void(0);"><i class="dropdown-icon fa fa-trash"></i> Delete</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body wizard_validation">
+                                <form id="wizard_with_validation" method="POST">
+                                    <h3>Account Information</h3>
+                                    <fieldset>
+                                        <div class="row clearfix">
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Username *" name="username" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" placeholder="Password *" name="password" id="password" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" placeholder="Confirm Password *" name="confirm" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <h3>Profile Information</h3>
+                                    <fieldset>
+                                        <div class="row clearfix">
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" name="name" placeholder="First Name *" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" name="surname" placeholder="Last Name *" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="form-group">
+                                                    <input type="email" name="email" placeholder="Email *" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input min="18" type="number" name="age" placeholder="Age *" class="form-control" required>
+                                                    <div class="help-info">The warning step will show up if age is less than 18</div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea name="address" cols="30" rows="3" placeholder="Address *" class="form-control no-resize" required></textarea>
+                                                </div>                                            
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <h3>Terms Conditions - Finish</h3>
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <div class="fancy-checkbox">
+                                                <label><input type="checkbox" name="acceptTerms"><span>I agree with the Terms and Conditions.</span></label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
             </div>
         </div>
-
+        
     </div>
 
 </div>
+
 <!-- Javascript -->
 <script src="assets/bundles/libscripts.bundle.js"></script>    
 <script src="assets/bundles/vendorscripts.bundle.js"></script>
 
 <!-- Vedor js file and create bundle with grunt  --> 
-<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
-<script src="assets/vendor/parsleyjs/js/parsley.min.js"></script>
+<script src="assets/vendor/jquery-validation/jquery.validate.js"></script><!-- Jquery Validation Plugin Css -->
+<script src="assets/vendor/jquery-steps/jquery.steps.js"></script><!-- JQuery Steps Plugin Js -->
+
 
 <!-- Project core js file minify with grunt --> 
 <script src="assets/bundles/mainscripts.bundle.js"></script>
-<!-- Project core js file minify with grunt --> 
-<script src="assets/bundles/mainscripts.bundle.js"></script>
-<script>
-    $(function() {
-        // validation needs name of the element
-        $('#food').multiselect();
-
-        // initialize after multiselect
-        $('#basic-form').parsley();
-    });
-</script>
-<!-- Vedor js file and create bundle with grunt  --> 
-<script src="assets/vendor/dropify/js/dropify.js"></script>
-<script src="../js/pages/forms/dropify.js"></script>
+<script src="../js/pages/forms/form-wizard.js"></script>
 </body>
 </html>
+
